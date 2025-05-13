@@ -1,11 +1,14 @@
 import { Heart, MessageCircle, Share } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import assets from "@/src/constants/icons";
 
 const posts = [
   {
     id: "1",
     username: "@damianexoudji",
+    name: "Damiane Exoudji",
+    avatar: "/assets/images/avatar.jpg", // Utilisez assets.EmptyUser si vous n'avez pas d'image
     time: "Il y a 2h",
     text: "Voici un post avec texte et images.",
     images: ["/assets/images/ccc.jpg", "/assets/images/jun.jpg"],
@@ -16,6 +19,8 @@ const posts = [
   {
     id: "2",
     username: "@john_doe",
+    name: "John Doe",
+    avatar: "/assets/images/avatar2.jpg",
     time: "Il y a 5h",
     // text: "Un autre exemple de post avec texte et image.",
     images: ["/assets/images/dfs.jpg", "/assets/images/pio.jpg"],
@@ -26,6 +31,8 @@ const posts = [
   {
     id: "3",
     username: "@textonly",
+    name: "Text Only",
+    avatar: "/assets/images/avatar3.jpg",
     time: "Il y a 1h",
     text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque, voluptatem, quia, dolores, consequuntur.. lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque, voluptatem, quia, dolores, consequuntur...",
     images: [], // Aucune image ici
@@ -36,6 +43,8 @@ const posts = [
   {
     id: "4",
     username: "@anothertext",
+    name: "Another Text",
+    avatar: "/assets/images/avatar4.jpg",
     time: "Il y a 3h",
     text: "Le texte de cet article est très long, et il y a beaucoup de contenu à lire. Il est important de bien lire les articles et de les partager avec les personnes qui ont des intérêts similaires. Lorsque vous lisez un article, vous devez vous concentrer sur les informations importantes et les lire attentivement.",
     images: [], // Aucun média ici
@@ -48,14 +57,27 @@ const posts = [
 const ContenuCard = () => {
   return (
     <div className="bg-white p-4 rounded-2xl shadow">
-      <h2 className="text-green-800 text-lg font-semibold mb-2"></h2>
       <div className="space-y-4">
         {posts.map((post) => (
           <div key={post.id} className="p-4 bg-gray-200 rounded-lg">
-            {/* profil et infos */}
-            <div className="flex items-center space-x-2">
-              <span className="text-black font-semibold">{post.username}</span>
-              <span className="text-sm text-gray-500">{post.time}</span>
+            {/* Profil et infos */}
+            <div className="flex items-center space-x-2 mb-3">
+              <div className="w-10 h-10 relative rounded-full overflow-hidden">
+                <Image
+                  src={assets.EmptyUser}
+                  alt={post.name}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div>
+                <span className="text-black font-semibold block">{post.name}</span>
+                <div className="flex items-center text-sm text-gray-500">
+                  <span>{post.username}</span>
+                  <span className="mx-1">•</span>
+                  <span>{post.time}</span>
+                </div>
+              </div>
             </div>
 
             {/* Texte du post */}
@@ -83,12 +105,12 @@ const ContenuCard = () => {
               </div>
             )}
 
-            {/* ligne et séparation */}
+            {/* Ligne de séparation */}
             <div className="border-t border-gray-300 my-2"></div>
 
             {/* Actions */}
-            <div className="flex flex-wrap justify-between text-sm text-gray-600 mt-2">
-              <div className="flex flex-wrap gap-4">
+            <div className="flex items-center justify-between text-sm text-gray-600 mt-2">
+              <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2 cursor-pointer">
                   <Heart size={18} />
                   <span>{post.likes} Likes</span>
@@ -97,10 +119,10 @@ const ContenuCard = () => {
                   <MessageCircle size={18} />
                   <span>{post.comments} Commentaires</span>
                 </div>
-                <div className="flex items-center gap-1 cursor-pointer">
-                  <Share size={18} />
-                  <span>{post.shares} Partager</span>
-                </div>
+              </div>
+              <div className="flex items-center gap-1 cursor-pointer">
+                <Share size={18} />
+                <span>{post.shares} Partager</span>
               </div>
             </div>
           </div>
