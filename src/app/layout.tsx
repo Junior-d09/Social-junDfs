@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Hubot_Sans, Nunito } from "next/font/google";
 import "./globals.css";
 import { Providers } from "../providers/ProvidersThemes";
-import UINavbar from "../components/navbar/UINavbar";
 import NavbarWrapper from "../components/NavbarWrapper";
 
 export const hubotSans = Hubot_Sans({
