@@ -5,14 +5,15 @@ import LeftUI from "./LeftUI";
 
 const LoginUI = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-16 w-full max-w-[1700px] px-4 sm:px-6 md:px-12 lg:px-20 mx-auto">
-      <div className="flex-1 max-w-[800px] flex justify-center">
-        <div className="relative w-full h-[150px] sm:h-[200px] md:h-[300px] lg:h-[400px]">
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-12 w-full max-w-7xl px-4 sm:px-6 md:px-10 mx-auto">
+      <div className="flex-1 w-full max-w-md flex justify-center">
+        <div className="relative w-full h-[120px] sm:h-[150px] md:h-[200px] lg:h-[250px]">
           <Image
             src={assets.jundfsIcone}
             alt="Jundfs"
             fill
             className="object-contain"
+            priority
           />
         </div>
       </div>

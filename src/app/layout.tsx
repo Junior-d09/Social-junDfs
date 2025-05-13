@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Hubot_Sans, Nunito } from "next/font/google";
 import "./globals.css";
 import { Providers } from "../providers/ProvidersThemes";
+import UINavbar from "../components/navbar/UINavbar";
+import NavbarWrapper from "../components/NavbarWrapper";
 
 export const hubotSans = Hubot_Sans({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -27,8 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <body className={`${hubotSans.className} antialiased`}>
-        <Providers>{children}</Providers>
+      <body className={`${hubotSans.className} antialiased`}>
+        <Providers>
+          <NavbarWrapper />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import UISearch from "./UISearch";
 import UIAvatar from "./UIAvatar";
-import ThemeToggle from "../ThemeToggle";
 
 const UINavbar = () => {
   return (
@@ -13,13 +12,12 @@ const UINavbar = () => {
         <Image
           src={assets.jundfsLogo}
           alt="friym logo"
-          width={150}
-          height={150}
+          width={70}
+          height={70}
         />
       </div>
       <UISearch />
-      <UIAvatar userName="Friym" />
-      <ThemeToggle />
+      <UIAvatar userName="Junior" />
     </div>
   );
 };

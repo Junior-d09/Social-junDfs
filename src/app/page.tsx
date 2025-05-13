@@ -4,9 +4,11 @@ import BottomFooter from "../components/home/BottomFooter";
 
 const page = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center ">
-     <LoginUI />
-     <BottomFooter />
+    <div className="h-screen overflow-hidden flex flex-col justify-between relative">
+      <div className="flex-grow flex items-center justify-center">
+        <LoginUI />
+      </div>
+      <BottomFooter />
     </div>
   );
 };
