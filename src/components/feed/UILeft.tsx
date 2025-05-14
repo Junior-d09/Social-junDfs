@@ -1,6 +1,6 @@
 import React from 'react';
-import UserCard from '../ui/feedCard.tsx/UserCard';
-import MenuCard from '../ui/feedCard.tsx/MenuCard';
+import UserCard from '../ui/leftCard/UserCard';
+import MenuCard from '../ui/leftCard/MenuCard';
 
 const UILeft = () => {
   return (
