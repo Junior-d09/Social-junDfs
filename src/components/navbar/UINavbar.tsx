@@ -7,13 +7,13 @@ import UIAvatar from "./UIAvatar";
 
 const UINavbar = () => {
   return (
-    <div className="flex-row items-center justify-between w-full flex px-14 py-2   bg-white dark:bg-white/[.06] shadow-sm">
+    <div className="flex-row items-center justify-between w-full flex px-10 py-3.5 bg-white dark:bg-white/[.06] shadow-sm">
       <div>
         <Image
           src={assets.jundfsLogo}
           alt="friym logo"
-          width={70}
-          height={70}
+          width={30}
+          height={30}
         />
       </div>
       <UISearch />

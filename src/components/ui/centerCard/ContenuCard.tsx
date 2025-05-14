@@ -56,10 +56,10 @@ const posts = [
 
 const ContenuCard = () => {
   return (
-    <div className="bg-white p-4 rounded-2xl shadow">
+    <div className="bg-white p-4 rounded-2xl shadow-sm">
       <div className="space-y-4">
         {posts.map((post) => (
-          <div key={post.id} className="p-4 bg-gray-200 rounded-lg">
+          <div key={post.id} className="p-4 bg-gray-100 rounded-lg border border-gray-200">
             {/* Profil et infos */}
             <div className="flex items-center space-x-2 mb-3">
               <div className="w-10 h-10 relative rounded-full overflow-hidden">

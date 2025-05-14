@@ -10,21 +10,22 @@ const MenuCard = () => {
   return (
     <div className="bg-white p-4 rounded-2xl shadow-md">
       {/* Barre de saisie */}
-      <div className="flex items-center gap-2 border-b pb-3">
-        <Image
-          src={assets.EmptyUser}
-          alt="story"
-          className="w-10 h-10 rounded-full"
-        />
-        <input
-          type="text"
-          placeholder="Quoi de neuf ?"
-          className="flex-1 px-3 py-2 rounded-full border focus:outline-none"
-        />
-        <button className="bg-green-600 text-white px-4 py-2 rounded-full">
-          Publier
-        </button>
-      </div>
+      <div className="flex items-center gap-2 border-b border-gray-200 pb-4">
+  <Image
+    src={assets.EmptyUser}
+    alt="story"
+    className="w-10 h-10 rounded-full"
+  />
+  <input
+    type="text"
+    placeholder="Quoi de neuf ?"
+    className="flex-1 px-3 py-2 rounded-full border focus:outline-none"
+  />
+  <button className="bg-green-600 text-white px-4 py-2 rounded-full">
+    Publier
+  </button>
+</div>
+
 
       {/* Options de publication */}
       <div className="flex justify-between items-center mt-3 text-gray-600">
