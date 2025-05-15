@@ -62,7 +62,7 @@ const ContenuCard = () => {
           <div key={post.id} className="p-4 bg-white rounded-lg border border-gray-200">
             {/* Profil et infos */}
             <div className="flex items-center space-x-2 mb-3">
-              <div className="w-10 h-10 relative rounded-full overflow-hidden">
+              <div className="w-10 h-10 relative rounded-full overflow-hidden cursor-pointer">
                 <Image
                   src={assets.EmptyUser}
                   alt={post.name}
@@ -82,7 +82,7 @@ const ContenuCard = () => {
 
             {/* Texte du post */}
             {post.text && (
-              <div className="text-gray-400 my-2">{post.text}</div>
+              <div className="text-gray-900 my-2">{post.text}</div>
             )}
 
             {/* Images */}
@@ -98,7 +98,7 @@ const ContenuCard = () => {
                       alt=""
                       layout="fill"
                       objectFit="cover"
-                      className="rounded-lg absolute top-0 left-0"
+                      className="rounded-lg absolute cursor-pointer top-0 left-0"
                     />
                   </div>
                 ))}
