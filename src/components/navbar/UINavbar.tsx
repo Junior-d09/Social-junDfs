@@ -7,7 +7,8 @@ import UIAvatar from "./UIAvatar";
 
 const UINavbar = () => {
   return (
-    <div className="flex-row items-center justify-between w-full flex px-10 py-3.5 bg-white dark:bg-white/[.06] shadow-sm">
+    <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full px-10 py-3.5 bg-white dark:bg-white/[.06] shadow-sm backdrop-blur-md">
+
       <div>
         <Image
           src={assets.jundfsLogo}

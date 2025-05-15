@@ -4,7 +4,7 @@ import MenuCard from '../ui/leftCard/MenuCard';
 
 const UILeft = () => {
   return (
-    <div className='w-full h-full flex flex-col gap-3 overflow-y-auto scrollbar-hide'>
+   <div className='w-full h-full flex flex-col gap-3 overflow-y-auto scrollbar-hide pt-[72px]'>
       <UserCard />
       <MenuCard />
     </div>

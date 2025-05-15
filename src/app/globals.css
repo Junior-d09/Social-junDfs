@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* --background: #ffffff; */
+  --background: #F4F2EE; /* Nouveau fond beige clair comme LinkedIn (au lieu de #ffffff) */
   --foreground: #171717;
 }
 

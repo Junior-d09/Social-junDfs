@@ -130,7 +130,7 @@ const StoryCard = () => {
   };
 
   return (
-    <div className="bg-white p-4 rounded-2xl shadow relative">
+    <div className="bg-white p-4 rounded-2xl relative">
       <div className="relative">
         {/* Left scroll button */}
         {showLeftButton && (

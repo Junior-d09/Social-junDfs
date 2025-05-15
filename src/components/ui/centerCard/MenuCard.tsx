@@ -8,7 +8,7 @@ import assets from "@/src/constants/icons";
 
 const MenuCard = () => {
   return (
-    <div className="bg-white p-4 rounded-2xl shadow-md">
+    <div className="bg-white p-4 rounded-2xl ">
       {/* Barre de saisie */}
       <div className="flex items-center gap-2 border-b border-gray-200 pb-4">
   <Image
