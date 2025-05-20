@@ -17,7 +17,7 @@ interface NewPostModalProps {
   onClose: () => void;
 }
 
-bconst NewPostModal = ({ isOpen, onClose }: NewPostModalProps) => {
+const NewPostModal = ({ isOpen, onClose }: NewPostModalProps) => {
   const [postText, setPostText] = useState("");
 
   const handleSubmit = () => {
