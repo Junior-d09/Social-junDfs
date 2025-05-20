@@ -3,7 +3,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogClose,
+
 } from "@/src/components/ui/dialog";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -17,7 +17,7 @@ interface NewPostModalProps {
   onClose: () => void;
 }
 
-const NewPostModal = ({ isOpen, onClose }: NewPostModalProps) => {
+bconst NewPostModal = ({ isOpen, onClose }: NewPostModalProps) => {
   const [postText, setPostText] = useState("");
 
   const handleSubmit = () => {
@@ -34,10 +34,7 @@ const NewPostModal = ({ isOpen, onClose }: NewPostModalProps) => {
             {" "}
             Créer un publication
           </DialogTitle>
-          <DialogClose className="absolute rigrt-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focu:ring-2 focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-mted-foreground">
-            <span className="text-2xl">&times;</span>
-            <span className="sr-only">Close</span>
-          </DialogClose>
+         
         </DialogHeader>
 
         <div className="flex items--center gap-2 mt-2">
