@@ -1,5 +1,5 @@
 import React from 'react';
-import UILeft from './feed/UILeft';  // Ajustez les chemins d'importation selon votre structure
+import UILeft from './feed/UILeft';
 import UICenter from './feed/UICenter';
 import UIRight from './feed/UIRight';
 
