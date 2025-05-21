@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${hubotSans.className} antialiased`}>
+      <body className={`${hubotSans.className} antialiased bg-[#F4F2EE]`}>
         <Providers>
           <NavbarWrapper />
           {children}

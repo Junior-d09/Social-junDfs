@@ -24,7 +24,7 @@ const userStats = [
 
 const UserCard = ({ data }: UserCardProps) => {
   return (
-    <div className="bg-white rounded-lg w-full h-[250px] p-4  flex items-center justify-center">
+    <div className="bg-white rounded-lg w-full h-[290px] p-4  flex items-center justify-center">
       <div className="bg-[#F7F7F7] w-full h-full rounded-md p-4 flex flex-col gap-3">
         <div className="flex flex-row items-center gap-3 border-b-[1px] border-gray-200 pb-3">
           <Image src={assets.EmptyUser} alt="user" width={50} height={50} />
@@ -50,7 +50,7 @@ const UserCard = ({ data }: UserCardProps) => {
           </div>
         </div>
       </div>
-    </div>
+     </div>
   );
 };
 

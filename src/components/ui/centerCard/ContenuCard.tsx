@@ -51,6 +51,61 @@ const posts = [
     likes: 800,
     comments: 20,
     shares: 10,
+  },{
+    id: "5",
+    username: "@christ12",
+    name: "Christ dfs",
+    avatar: "/assets/images/avatar4.jpg",
+    time: "Il y a 3h",
+    text: "Le texte de cet article est très long, et il y a beaucoup de contenu à lire. Il est important de bien lire les articles et de les partager avec les personnes qui ont des intérêts similaires. Lorsque vous lisez un article, vous devez vous concentrer sur les informations importantes et les lire attentivement.",
+    images: [], // Aucun média ici
+    likes: 800,
+    comments: 20,
+    shares: 10,
+  },{
+    id: "6",
+    username: "@another",
+    name: "Ricko Rick",
+    avatar: "/assets/images/avatar4.jpg",
+    time: "Il y a 3h",
+    text: "Le texte de cet article est très long, et il y a beaucoup de contenu à lire. Il est important de bien lire les articles et de les partager avec les personnes qui ont des intérêts similaires. Lorsque vous lisez un article, vous devez vous concentrer sur les informations importantes et les lire attentivement.",
+    images: ["/assets/images/avatar1.jpg"], // Aucun média ici
+    likes: 800,
+    comments: 20,
+    shares: 10,
+  },{
+    id: "7",
+    username: "@Rock",
+    name: "Anabelle West",
+    avatar: "/assets/images/avatar4.jpg",
+    time: "Il y a 3h",
+    text: "Le texte de cet article est très long, et il y a beaucoup de contenu à lire. Il est important de bien lire les articles et de les partager avec les personnes qui ont des intérêts similaires. Lorsque vous lisez un article, vous devez vous concentrer sur les informations importantes et les lire attentivement.",
+    images: [], // Aucun média ici
+    likes: 800,
+    comments: 20,
+    shares: 10,
+  },{
+    id: "8",
+    username: "@Westm",
+    name: "Kali Karl",
+    avatar: "/assets/images/avatar4.jpg",
+    time: "Il y a 3h",
+    text: "Le texte de cet article est très long, et il y a beaucoup de contenu à lire. Il est important de bien lire les articles et de les partager avec les personnes qui ont des intérêts similaires. Lorsque vous lisez un article, vous devez vous concentrer sur les informations importantes et les lire attentivement.",
+    images: ["/assets/images/avatar2.jpg","/assets/images/avatar3.jpg"], // Aucun média ici
+    likes: 800,
+    comments: 20,
+    shares: 10,
+  },{
+    id: "9",
+    username: "@Pio_dfs",
+    name: "Junior Junior",
+    avatar: "/assets/images/avatar4.jpg",
+    time: "Il y a 3h",
+    text: "Le texte de cet article est très long, et il y a beaucoup de contenu à lire. Il est important de bien lire les articles et de les partager avec les personnes qui ont des intérêts similaires. Lorsque vous lisez un article, vous devez vous concentrer sur les informations importantes et les lire attentivement.",
+    images: ["/assets/images/story.jpg","/assets/images/avatar4.jpg"], // Aucun média ici
+    likes: 800,
+    comments: 20,
+    shares: 10,
   },
 ];
 
