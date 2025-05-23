@@ -35,8 +35,7 @@ const UserCard = ({ data }: UserCardProps) => {
         </div>
         <div>
           <span className="text-sm text-gry-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ratione
-            sit nostrum, nesciunt ea error!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           </span>
           <div className="flex flex-row items-center justify-between gap-3 mt-3">
             {userStats.map((stat, index) => (

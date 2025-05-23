@@ -1,0 +1,1 @@
+export type FeedView = "feed" | "friends" | "images" | "videos" | "notifications" | "events" | "marketplace" | "tags" | "users";

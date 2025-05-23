@@ -1,7 +1,8 @@
 import React from 'react';
-import UILeft from './feed/UILeft';
+// import UILeft from './feed/UILeft';
 import UICenter from './feed/UICenter';
 import UIRight from './feed/UIRight';
+import UILeft from './feed/UILeft';
 
 interface MainLayoutProps {
   children?: React.ReactNode;
@@ -12,7 +13,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     <div className="flex flex-col md:flex-row h-screen bg-gray-100 overflow-hidden">
       {/* Sidebar gauche - caché sur mobile, visible sur tablette et + */}
       <div className="hidden md:block md:flex-shrink-0 p-2 overflow-hidden">
-        <UILeft />
+        <UILeft/>
       </div>
       
       {/* Centre - toujours visible, s'adapte en largeur */}

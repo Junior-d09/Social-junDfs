@@ -34,14 +34,7 @@ const MenuCard = () => {
           onClick={openModal}
           readOnly
         />
-        {/* <button 
-          className={`px-4 py-2 rounded-full ${
-            postText.trim() ? "bg-green-600 text-white" : "bg-gray-200 text-gray-400"
-          }`}
-          disabled={!postText.trim()}
-        >
-          Publier
-        </button> */}
+        
       </div>
 
       {/* Options de publication */}
